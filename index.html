@@ -1,7 +1,95 @@
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .overlay {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .card:hover .image {
+            opacity: 0.3;
+        }
+
+        .card:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: #47bcc9;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+
+        .navbar {
+            background-color: #47bcc9;
+        }
+    </style>
+    <title>Sarah Popelka</title>
 </head>
+
 <body>
-<h1> HELLO WORLD </h1>
+    <!-- Image and text -->
+    <nav class="navbar ">
+        <a class="navbar-brand" href="#" style="color:#ffffff;font-weight:bold;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Sine_Wave_%28PSF%29.png" width="30"
+                height="30" class="d-inline-block align-top" alt="">
+            Sarah Popelka
+        </a>
+    </nav>
+    <div class="container" style="background-color:#d9f7fa">
+        <div class="row"><br><br></div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card h-100">
+                    <a href="https://sarahpopelka.github.io/Paris2024">
+                        <img class="card-img image" src="https://sarahpopelka.github.io/Paris2024/assets/img/Logo.svg"
+                            alt="Paris 2024">
+                            <div class="overlay">
+                                <div class="text">Paris 2024 Application Pitch</div>
+                            </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card h-100">
+                    <a href="https://sarahpopelka.github.io/Games/BingoCard">
+                        <img class="card-img image" src="assets/bingo.png"
+                            alt="Bingo">
+                        <div class="overlay">
+                            <div class="text">Bingo Card</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card h-100">
+                    <a href="https://sarahpopelka.github.io/Games/BingoCage">
+                        <img class="card-img image" src="assets/bingocage.jpg"
+                            alt="Bingo">
+                        <div class="overlay">
+                            <div class="text">Bingo Cage</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row"><br><br></div>
+    </div>
 </body>
+
 </html>
