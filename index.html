@@ -10,14 +10,16 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
         .overlay {
-            transition: .5s ease;
-            opacity: 0;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            text-align: center;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #47bcc9;
         }
 
         .card:hover .image {
@@ -29,10 +31,15 @@
         }
 
         .text {
-            background-color: #47bcc9;
             color: white;
-            font-size: 16px;
-            padding: 16px 32px;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
         }
 
         .navbar {
@@ -51,7 +58,7 @@
             Sarah Popelka
         </a>
     </nav>
-    <div class="container" >
+    <div class="container">
         <div class="row"><br><br></div>
         <div class="row">
             <div class="col-sm-4">
@@ -59,17 +66,16 @@
                     <a href="https://sarahpopelka.github.io/Paris2024">
                         <img class="card-img image" src="https://sarahpopelka.github.io/Paris2024/assets/img/Logo.svg"
                             alt="Paris 2024">
-                            <div class="overlay">
-                                <div class="text">2024 Olympics Application Pitch</div>
-                            </div>
+                        <div class="overlay">
+                            <div class="text">2024 Olympics Application Pitch</div>
+                        </div>
                     </a>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="card h-100">
                     <a href="https://sarahpopelka.github.io/Games/BingoCard">
-                        <img class="card-img image" src="assets/bingo.png"
-                            alt="Bingo">
+                        <img class="card-img image" src="assets/bingo.png" alt="Bingo">
                         <div class="overlay">
                             <div class="text">Bingo Card</div>
                         </div>
@@ -79,8 +85,7 @@
             <div class="col-sm-4">
                 <div class="card h-100">
                     <a href="https://sarahpopelka.github.io/Games/BingoCage">
-                        <img class="card-img image" src="assets/bingocage.jpg"
-                            alt="Bingo">
+                        <img class="card-img image" src="assets/bingocage.jpg" alt="Bingo">
                         <div class="overlay">
                             <div class="text">Bingo Cage</div>
                         </div>
